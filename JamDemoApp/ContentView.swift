@@ -16,6 +16,9 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
+        .onAppear {
+            JamBugBuster.shared.activate(invocationType: .shake)
+        }
     }
 }
 
